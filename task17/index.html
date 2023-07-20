@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS Modules and Directives Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div ng-controller="CourseController">
+        <h1>Courses</h1>
+        <ul>
+            <li ng-repeat="course in courses">{{ course.name }}</li>
+        </ul>
+
+        <iitml text="Hello from IITML"></iitml>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
