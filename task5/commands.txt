@@ -1,0 +1,67 @@
+Node.js comes with a built-in REPL (Read-Eval-Print Loop) environment, which allows you to interactively run JavaScript code in a console-like interface. The REPL is an excellent tool for testing small code snippets, experimenting with JavaScript features, and debugging. Here are some basic commands and features of the Node.js REPL:
+
+1. **Starting the Node.js REPL:**
+To start the Node.js REPL, open your terminal or command prompt and type `node`:
+
+```bash
+node
+```
+
+After executing this command, you should see the Node.js REPL prompt, which looks like `>`. Now you can enter JavaScript code and see the results immediately.
+
+2. **Basic Commands:**
+The Node.js REPL provides a few built-in commands:
+
+- `.help`: Display a list of available commands and their descriptions.
+- `.break` (or `.b`): Exit from a multi-line expression.
+- `.clear` (or `.c`): Clear the REPL context.
+- `.exit` (or `.e`, `.quit`, `.q`): Exit the REPL.
+
+3. **Running JavaScript Code:**
+You can directly type and run JavaScript code in the REPL. Just enter the code and press the `Enter` key to execute it. The result will be displayed on the next line.
+
+Example:
+```javascript
+> 2 + 3
+5
+> const message = 'Hello, World!';
+undefined
+> message
+'Hello, World!'
+```
+
+4. **Multi-line Input:**
+The REPL allows you to write multi-line expressions. If you want to write a longer piece of code that spans multiple lines, use the `.` (dot) as the last character on a line to signal the REPL that you're continuing the expression on the next line.
+
+Example:
+```javascript
+> const sum = (a, b) => {
+...   return a + b;
+... }
+undefined
+> sum(5, 10)
+15
+```
+
+5. **Underscore `_` Variable:**
+The underscore `_` variable stores the result of the last operation. You can use it to reference the result in subsequent expressions.
+
+Example:
+```javascript
+> 5 + 10
+15
+> _ * 2
+30
+```
+
+6. **Tab Completion:**
+The Node.js REPL supports tab completion, which means you can press the `Tab` key to get suggestions for available commands, variables, and functions.
+
+Example:
+```javascript
+> cons
+```
+Press `Tab` key after typing `cons`, and it will suggest `console`.
+
+These are some of the basic commands and features of the Node.js REPL. It's a handy tool for quick JavaScript testing and exploration. To exit the REPL, you can use the `.exit` command or press `Ctrl + C` twice (in most systems).
+
